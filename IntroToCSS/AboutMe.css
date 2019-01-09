@@ -1,0 +1,17 @@
+h1 {
+	color: #FF8000;
+	border: 8px solid rgb(255, 100, 80);
+}
+
+li {
+	color: green;
+}
+
+h4 {
+	background: rgb(255, 100, 80);
+	color: purple;
+}
+
+body {
+	background: pink;
+}
