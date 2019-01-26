@@ -30,7 +30,7 @@ let easyButton = document.querySelector("#easy");
 easyButton.addEventListener("click", function() {
 	easyButton.classList.add("selected");
 	hardButton.classList.remove("selected");
-
+	h1.style.backgroundColor = "steelblue";
 	numSquares = hardButton.classList.contains("selected") ? 6 : 3;
 
 	colors = generateRandomColors(numSquares);
@@ -42,6 +42,7 @@ easyButton.addEventListener("click", function() {
 		if (i < 3)
 		{
 			squares[i].style.backgroundColor = colors[i];
+			squares[i].classList.add("hoverable");
 		}
 		else
 		{
@@ -55,7 +56,7 @@ let hardButton = document.querySelector("#hard");
 hardButton.addEventListener("click", function() {
 	easyButton.classList.remove("selected");
 	hardButton.classList.add("selected");
-
+	h1.style.backgroundColor = "steelblue";
 	numSquares = hardButton.classList.contains("selected") ? 6 : 3;
 
 	colors = generateRandomColors(numSquares);
