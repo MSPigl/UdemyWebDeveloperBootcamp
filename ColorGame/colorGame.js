@@ -91,6 +91,7 @@ for (let i = 0; i < squares.length; i++)
 		else
 		{
 			this.style.backgroundColor = "#232323";
+			this.classList.remove("hoverable");
 			messageDisplay.textContent = "Try Again";
 		}
 	});
